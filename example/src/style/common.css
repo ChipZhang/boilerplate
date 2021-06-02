@@ -1,0 +1,24 @@
+pre {
+	background-color: greenyellow;
+}
+
+.postcss-test {
+	transition: 1s;
+	transform: scale(0.5);
+	color: #12345678;
+}
+
+@keyframes postcss-test {
+	0% {
+		transform: rotate(0deg);
+		border-top-color: red;
+	}
+	50% {
+		transform: rotate(360deg);
+		border-top-color: transparent;
+	}
+	100% {
+		transform: rotate(720deg);
+		border-top-color: red;
+	}
+}

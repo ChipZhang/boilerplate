@@ -1,0 +1,13 @@
+# ignore dot folders but not dot files
+.*/
+# project files to ignore
+/cli/*.js
+/cli/*.d.ts
+/utils/*.js
+/utils/*.d.ts
+/webpack/*.js
+/webpack/*.d.ts
+/index.js
+/index.d.ts
+/example/build/
+/example/static/

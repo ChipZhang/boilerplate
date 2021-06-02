@@ -1,0 +1,14 @@
+{
+	"extends": "@chipzhang/tsconfig/tsconfig.react.json",
+	// for custom types definition, use `include` than `typeRoots`
+	"include": ["../types", "src"],
+	// "include": ["node_modules/@chipzhang/boilerplate/types", "src"], // uncomment this line and delete the upper line in a real project
+	"compilerOptions": {
+		// alias path should be synced with webpack alias/resolve settings
+		"baseUrl": ".",
+		"paths": {
+			"*": ["node_modules/*"],
+			"alias-name": ["src/common/alias"]
+		}
+	}
+}

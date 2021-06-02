@@ -1,0 +1,32 @@
+<%
+    /**
+     * for lodash templates (`_.template`), `〈%= %〉` outputs unescaped raw result, `〈%- %〉` outputs escaped result
+     * for EJS, `〈%= %〉` outputs escaped result, `〈%- %〉` outputs unescaped raw result
+     * `html-webpack-plugin` uses lodash templates by default
+     *
+     * global variables within this file: htmlWebpackPlugin, webpackConfig, compilation, ...templateParameters
+     *
+     * interface TemplateParameter {
+     *     compilation: any;
+     *     htmlWebpackPlugin: {
+     *         tags: {
+     *             headTags: HtmlTagObject[];
+     *             bodyTags: HtmlTagObject[];
+     *         };
+     *         files: {
+     *             publicPath: string;
+     *             js: Array<string>;
+     *             css: Array<string>;
+     *             manifest?: string;
+     *             favicon?: string;
+     *         };
+     *         options: Options;
+     *     };
+     *     webpackConfig: any;
+     * }
+     */
+%><!DOCTYPE html>
+<html lang="zh">
+	<head></head>
+	<body></body>
+</html>

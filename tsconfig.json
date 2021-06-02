@@ -1,0 +1,11 @@
+{
+	"extends": "@chipzhang/tsconfig/tsconfig.node.json",
+	"include": ["cli", "types", "utils", "webpack", "index.ts"],
+	// at least for TypeScript v4.2.3, it can not extends `ts-node` key from base config
+	"ts-node": {
+		// when running `ts-node`, load all files defined in `tsconfig.json`, used for `./types/index.d.ts`
+		"files": true,
+		// if there are `file.js` and `file.ts`, prefer `file.ts` than `file.js`
+		"preferTsExts": true
+	}
+}
